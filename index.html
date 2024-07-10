@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Challenge - Desafío 1 Lógica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+
+        <section>
+            <article>
+                <img class="logo" src="./img/Logo.svg" alt="">
+            </article>
+
+            <article>
+                <textarea name="ingresar" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                <div>
+                    <span class="warning"><img src="./img/Vector.svg" alt=""> Solo letras minúsculas y sin acento</span>
+                    <div class="buttons">
+                        <input type="button" value="encriptar" onclick="encriptar()">
+                        <input type="button" value="desencriptar" onclick="desencriptar()">
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <img class="muñeco" id="muñeco" src="./img/muñeco.png" alt="">
+                <div class="mensaje">
+                    <h1 id="titulo-mensaje">Ningún mensaje fue encontrado</h1>
+                    <p id="parrafo-script">Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+</body>
+<script src="./script.js"></script>
+</html>

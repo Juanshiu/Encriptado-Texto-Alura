@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #f2faff;
+}
+
+section{
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    width: 100%;
+    height: 100vh;
+}
+
+article:first-child{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    height: 100%;
+}
+
+.logo {
+    width: 6rem;
+
+}
+
+article:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+}
+
+.warning {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+
+article:last-child{
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    padding: 1.2rem 1rem 1rem 1.2rem;
+}
+
+.muñeco {
+    width: 100%;
+}
+
+.mensaje {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+h1 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+}
+
+textarea{
+    margin-top: auto;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 7rem 1rem 1rem 0;
+    font-size: 1.5rem;
+}
+
+textarea::placeholder {
+    color: #0000748b;
+}
+
+.buttons {
+    display: flex;
+    gap: 2rem;
+}
+
+.buttons input{
+    width: 50%;
+    border-radius: 1rem;
+    font-size: .9rem;
+    padding: 1rem 0 1rem 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: ease-in-out  0.2s;
+}
+
+.buttons input:nth-child(1){
+    background-color: #000074;
+    color: #fff;
+}
+
+.buttons input:nth-child(2){
+    background-color: #d5dce6;
+    color: #000074;
+    border: 1px solid #000074;
+}
+
+.buttons input:hover{
+    scale: 1.05;
+}
+
+.btn-copy {
+    width: 100%;
+    margin-top: auto;
+    display: none;
+}
+
+.copiar {
+    width: 100%;
+    border-radius: 1rem;
+    font-size: .9rem;
+    padding: 1rem 0 1rem 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+@media screen and (width <= 768px){
+    section{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    article:first-child{
+        width: 100%;
+        height: 10%;
+    }
+
+    .logo {
+        width: 5rem;
+    }
+
+    article:first-child img{
+        size: 1rem;
+    }
+
+    article:nth-child(2){
+        width: 100%;
+        height: 70%;
+    }
+
+    textarea{
+        padding: 0;
+    }
+
+    article:last-child{
+        width: 100%;
+        height: 30%;
+    }
+
+    article:last-child img{
+        display: none;
+    }
+
+    .mensaje{
+        margin-top: 0;
+    }
+}
